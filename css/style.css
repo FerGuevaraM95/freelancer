@@ -65,3 +65,37 @@ p {
 .subtitle {
     font-size: 1.6rem;
 }
+
+
+/* SERVICES */
+
+.services {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.services h2 {
+    padding-bottom: .5rem;
+}
+
+.services h2::after {
+    display: block;
+    width: 7rem;
+    height: .5rem;
+    margin: 1rem auto 0 auto;
+    content: '';
+    background-color: var(--primario);
+}
+
+.services i {
+    font-size: 3rem;
+    color: var(--secundario);
+}
+
+@media (min-width:768px) {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 2rem;
+    }
+}
