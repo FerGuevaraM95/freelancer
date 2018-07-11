@@ -28,5 +28,8 @@ function loadPortfolio() {
 
         // Inyectar el html
         document.querySelector('#list').innerHTML = html;
-    } )
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
 }
