@@ -4,6 +4,7 @@
     --primario: #f1a94e;
     --secundario: #44b3c2;
     --claro: #ffffff;
+    --oscuro: #5b5b5b;
 }
 
 body {
@@ -97,5 +98,28 @@ p {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-column-gap: 2rem;
+    }
+}
+
+
+/* PORTFOLIO */
+
+.element {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--oscuro);
+}
+
+@media (min-width:768px) {
+    .list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+        grid-auto-rows: max-content;
+    }
+    .element {
+        border: none;
+    }
+    .element:nth-child(3) {
+        grid-row-end: span 2;
     }
 }
