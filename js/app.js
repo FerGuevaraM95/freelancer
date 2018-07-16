@@ -17,7 +17,7 @@ function loadPortfolio() {
             // Crear el template
             html += `
                 <div class="element">
-                    <img src="../img/${portfolio.id}.jpg">
+                    <img src="./img/${portfolio.id}.jpg">
                     <div class="content">
                         <h3>${portfolio.name}</h3>
                         <p>${portfolio.desc}</p>
